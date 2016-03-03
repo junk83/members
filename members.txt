@@ -1,0 +1,5 @@
+1001 匿名メンバーA aaa@example.com
+1002 匿名メンバーB bbb@example.com
+1003 匿名メンバーC ccc@example.com
+1004 匿名メンバーD ddd@example.com
+1005 匿名メンバーE eee@example.com
