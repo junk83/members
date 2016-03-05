@@ -21,7 +21,7 @@ if($_SERVER['REQUEST_METHOD'] == 'GET')
     }
 
     //members.txtファイルを開く
-    if(!$fp = fopen($fileName, "r")){
+    if(!($fp = fopen($fileName, "r"))){
       echo "ファイルを開けませんでした。";
       exit;
     }
@@ -38,7 +38,7 @@ if($_SERVER['REQUEST_METHOD'] == 'GET')
         //キーと出力データで連想配列を生成
         $data = array_combine($data_key, $data_val);
         //出力データの配列に格納
-        array_push($datas, $data);
+        $datas[] = $data;
     }
 
     //ファイルを閉じる
